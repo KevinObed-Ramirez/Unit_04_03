@@ -49,25 +49,26 @@ body > header > h1{
    font-family: limelight,cursive;
    margin: 0px;
 }
-h1 span :last-of-type{
+h1 span:last-of-type{
    color: rgba(255, 255, 255, 0.4);
 }
 
 
 
 /* Navigation Styles */
-nav#mainlinks{
+nav#mainLinks{
    padding-top: 5px;
    padding-bottom: 5px;
 }
-nav#mainlinks a:visited, a:link{
+nav#mainLinks a:visited, nav#mainLinks a:link{
    color: white;
 }
-nav#mainlinks a:hover, a:active{
+nav#mainLinks a:hover, nav#mainLinks a:active{
    background-color: rgba(51, 51, 51, 0.5);
    color: white;
    opacity: 0.8;
 }
+
 
 
 
@@ -83,20 +84,50 @@ nav#outline > ol{
    line-height: 2em;
    margin-bottom: 0px;
    margin-top: 0px;
+   margin-left: 5px;
+   margin-right: 5px;
+   list-style-type: upper-roman;
 }
-/*gay*/
+nav#outline > ol ol{
+   list-style-type: upper-alpha;
+}
+nav#outline a:visited, nav#outline a:link {
+   color: rgb(101, 101, 101);
+} 
+nav#outline a:hover, nav#outline a:active{
+   color: rgb(97, 97, 211);
+   text-decoration-line: underline;
+}
 
 
 
 /* Section Styles */
-
+section{
+   background-color: rgb(220, 220, 220);
+}
+section header h1{
+   font-size: 2.2em;
+   padding-left: 10px;
+}
 
 
 
 /* Article Styles */
-
+article h2{
+   font-size: 1.4em;
+}
+article > p:first-of-type:first-letter{
+   font-size: 2em;
+   vertical-align: baseline;
+}
 
 
 
 /* Aside Styles */
-
+aside {
+   font-size: 0.9em;
+}
+aside h1{
+   font-size: 1.4em;
+   text-align: center;
+}
